@@ -34,34 +34,34 @@ class _FlutterBottomNavigationBar extends State<FlutterBottomNavigationBar> {
               ),
               title: Text(
                 'Home',
-                style: TextStyle(color: Colors.purple),
+                style: TextStyle(color: Colors.white),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.wifi,
-                color: Colors.lightBlue,
+                color: Colors.purple,
               ),
               title: Text(
                 'Http',
-                style: TextStyle(color: Colors.purple),
+                style: TextStyle(color: Colors.white),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.adjust,
-                color: Colors.lightBlue,
+                color: Colors.purple,
               ),
               title: Text(
                 'Adjust',
-                style: TextStyle(color: Colors.purple),
+                style: TextStyle(color: Colors.white),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.map,
-                color: Colors.lightBlue,
+                color: Colors.purple,
               ),
               title: Text(
                 'Map',
-                style: TextStyle(color: Colors.purple),
+                style: TextStyle(color: Colors.white),
               ))
         ],
         onTap: (int index) {
