@@ -9,7 +9,6 @@ class FlutterBottomNavigationBar extends StatefulWidget {
 }
 
 class _FlutterBottomNavigationBar extends State<FlutterBottomNavigationBar> {
-  final _FlutterBottomNavigationColor = Colors.lightBlue;
   int _currentIndex = 0;
   List<Widget> list;
 
@@ -31,38 +30,38 @@ class _FlutterBottomNavigationBar extends State<FlutterBottomNavigationBar> {
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
-                color: _FlutterBottomNavigationColor,
+                color: Colors.lightBlue,
               ),
               title: Text(
                 'Home',
-                style: TextStyle(color: _FlutterBottomNavigationColor),
+                style: TextStyle(color: Colors.lightBlue),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.wifi,
-                color: _FlutterBottomNavigationColor,
+                color: Colors.lightBlue,
               ),
               title: Text(
                 'Http',
-                style: TextStyle(color: _FlutterBottomNavigationColor),
+                style: TextStyle(color: Colors.lightBlue),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.adjust,
-                color: _FlutterBottomNavigationColor,
+                color: Colors.lightBlue,
               ),
               title: Text(
                 'Adjust',
-                style: TextStyle(color: _FlutterBottomNavigationColor),
+                style: TextStyle(color: Colors.lightBlue),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.map,
-                color: _FlutterBottomNavigationColor,
+                color: Colors.lightBlue,
               ),
               title: Text(
                 'Map',
-                style: TextStyle(color: _FlutterBottomNavigationColor),
+                style: TextStyle(color: Colors.lightBlue),
               ))
         ],
         onTap: (int index) {
