@@ -30,11 +30,11 @@ class _FlutterBottomNavigationBar extends State<FlutterBottomNavigationBar> {
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
-                color: Colors.lightBlue,
+                color: Colors.purple,
               ),
               title: Text(
                 'Home',
-                style: TextStyle(color: Colors.lightBlue),
+                style: TextStyle(color: Colors.purple),
               )),
           BottomNavigationBarItem(
               icon: Icon(
@@ -43,7 +43,7 @@ class _FlutterBottomNavigationBar extends State<FlutterBottomNavigationBar> {
               ),
               title: Text(
                 'Http',
-                style: TextStyle(color: Colors.lightBlue),
+                style: TextStyle(color: Colors.purple),
               )),
           BottomNavigationBarItem(
               icon: Icon(
@@ -52,7 +52,7 @@ class _FlutterBottomNavigationBar extends State<FlutterBottomNavigationBar> {
               ),
               title: Text(
                 'Adjust',
-                style: TextStyle(color: Colors.lightBlue),
+                style: TextStyle(color: Colors.purple),
               )),
           BottomNavigationBarItem(
               icon: Icon(
@@ -61,7 +61,7 @@ class _FlutterBottomNavigationBar extends State<FlutterBottomNavigationBar> {
               ),
               title: Text(
                 'Map',
-                style: TextStyle(color: Colors.lightBlue),
+                style: TextStyle(color: Colors.purple),
               ))
         ],
         onTap: (int index) {
