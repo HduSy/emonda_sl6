@@ -6,18 +6,18 @@ class FlutterBottomFloatBtn extends StatefulWidget {
 }
 
 class _FlutterBottomFloatBtn extends State<FlutterBottomFloatBtn> {
-  List<Widget> view_list;
-  int view_index = 0;
+  List<Widget> _view_list;
+  int _view_index = 0;
 
   @override
   void initState() {
     // TODO: implement initState
-    view_list = List();
-    view_list
+    _view_list = List();
+    _view_list
       ..add(EachView('Home'))
       ..add(EachView('Wifi'))
-      ..add(EachView('Map'))
-      ..add(EachView('Adjust'));
+      ..add(EachView('Adjust'))
+      ..add(EachView('Map'));
     super.initState();
   }
 
@@ -53,7 +53,7 @@ class _FlutterBottomFloatBtn extends State<FlutterBottomFloatBtn> {
               ),
               onPressed: () {
                 setState(() {
-                  view_index = 0;
+                  _view_index = 0;
                 });
               },
             ),
@@ -64,7 +64,7 @@ class _FlutterBottomFloatBtn extends State<FlutterBottomFloatBtn> {
               ),
               onPressed: () {
                 setState(() {
-                  view_index = 1;
+                  _view_index = 1;
                 });
               },
             ),
@@ -75,7 +75,7 @@ class _FlutterBottomFloatBtn extends State<FlutterBottomFloatBtn> {
               ),
               onPressed: () {
                 setState(() {
-                  view_index = 2;
+                  _view_index = 2;
                 });
               },
             ),
@@ -86,14 +86,14 @@ class _FlutterBottomFloatBtn extends State<FlutterBottomFloatBtn> {
               ),
               onPressed: () {
                 setState(() {
-                  view_index = 3;
+                  _view_index = 3;
                 });
               },
             )
           ],
         ),
       ),
-      body: view_list[view_index],
+      body: _view_list[_view_index],
     );
   }
 }
