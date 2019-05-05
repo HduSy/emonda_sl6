@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:emonda_sl6/pages/secondPage.dart';
+import 'package:emonda_sl6/widgets/customizeAnimation.dart';
 
 class FirstPage extends StatelessWidget {
   @override
@@ -22,10 +23,7 @@ class FirstPage extends StatelessWidget {
               size: 55,
             ),
             onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (BuildContext context) {
-                return SecondPage();
-              }));
+              Navigator.of(context).push(CustomizeAnimation(SecondPage()));
             }),
       ),
     );
